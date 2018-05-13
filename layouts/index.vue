@@ -1,7 +1,7 @@
 <template>
   <section class="hero is-dark is-fullheight">
     <div class="hero-head">
-      <nav class="navbar is-light">
+      <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item" href="/">
