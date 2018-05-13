@@ -6,12 +6,12 @@
   * Authでリダイレクト
 * Config
   * expressを使う
-  * nuxt.config.jsを読むように
+  * nuxt.config.jsを読むように
   * BulmaなどのCSSフレームワークを使えるように
 * Assets
   * CSS
     * SCSS/SASSを使う
-    * Bulmaを使えるように
+    * Bulmaを使えるように
 * Page/Components/Layout
   * ログイン後のページ
 
