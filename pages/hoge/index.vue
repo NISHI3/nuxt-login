@@ -7,13 +7,23 @@
       <p class="subtitle">
         My first website with <strong>Bulma</strong>!
       </p>
+      <button class="button" @click="logout">Logout</button>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  layout: 'index'
+  layout: 'index',
+  methods: {
+    async logout() {
+      try {
+        await this.$store.dispatch('logout')
+      } catch (e) {
+        this.formError = e.message
+      }
+    }
+  }
 }
 </script>
 
