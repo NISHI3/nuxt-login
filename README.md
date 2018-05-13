@@ -14,12 +14,17 @@
     * Bulmaを使えるように
 * Page/Components/Layout
   * ログイン後のページ
+  * Loginページを分離
+  * Darkテーマを作る
 
 いじる予定
+* BackEnd
+  * ログインシステムを作る
 * Page/Components/Layout
-  * Loginページを分離
   * Componentsでいくつかのログインフォームを作る
   * Layoutを複数作る
+  * なんかページを作る
+
 
 ToDo: たまにいじる
 
