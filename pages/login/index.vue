@@ -30,6 +30,7 @@
 
 <script>
 export default {
+  middleware: 'login',
   data() {
     return {
       formError: null,
@@ -47,6 +48,7 @@ export default {
         this.formUsername = ''
         this.formPassword = ''
         this.formError = null
+        this.$router.push("/")
       } catch (e) {
         this.formError = e.message
       }
@@ -63,11 +65,6 @@ export default {
 </script>
 
 <style>
-  .container {
-    padding: 100px;
-  }
-  .error {
-    color: red;
-  }
+
 </style>
 
