@@ -13,9 +13,13 @@
     * SCSS/SASSを使う
     * Bulmaを使えるように
 * Page/Components/Layout
-  * Loginページを分離
   * ログイン後のページ
-  * Layoutを複数作る
+
+いじる予定
+* Page/Components/Layout
+  * Loginページを分離
   * Componentsでいくつかのログインフォームを作る
+  * Layoutを複数作る
 
 ToDo: たまにいじる
+
