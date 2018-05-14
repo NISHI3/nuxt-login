@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  layout: 'index',
+  layout: 'index2',
   methods: {
     async logout() {
       try {

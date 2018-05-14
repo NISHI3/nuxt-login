@@ -1,35 +1,33 @@
 <template>
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="column is-4 is-offset-4">
-          <div class="box">
-            <h3 class="title has-text-grey">Login</h3>
-            <form @submit.prevent="login">
-              <p class="error" v-if="formError">{{ formError }}</p>
-              <div class="field">
-                <div class="control">
-                  <input class="input is-large" type="text" v-model="formUsername" name="username" placeholder="Username" autofocus="">
-                </div>
+  <div class="hero-body login">
+    <div class="container has-text-centered">
+      <div class="column is-4 is-offset-4">
+        <div class="box">
+          <h3 class="title has-text-grey">Login</h3>
+          <form @submit.prevent="login">
+            <p class="error" v-if="formError">{{ formError }}</p>
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="text" v-model="formUsername" name="username" placeholder="Username" autofocus="">
               </div>
+            </div>
 
-              <div class="field">
-                <div class="control">
-                  <input class="input is-large" type="password" v-model="formPassword" name="password" placeholder="Password">
-                </div>
+            <div class="field">
+              <div class="control">
+                <input class="input is-large" type="password" v-model="formPassword" name="password" placeholder="Password">
               </div>
-              <button class="button is-block is-info is-large is-fullwidth" type="submit">Login</button>
-            </form>
-            <button class="button" @click="logout">Logout</button>
-          </div>
+            </div>
+            <button class="button is-large is-fullwidth" type="submit">Login</button>
+          </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
 export default {
+  layout: 'index',
   middleware: 'login',
   data() {
     return {

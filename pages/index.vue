@@ -1,11 +1,18 @@
 <template>
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="title">
-        Title
-      </h1>
+      <div v-if="$store.state.authUser">
+        <h1 class="title">
+          ようこそ {{$store.state.authUser.username}}
+        </h1>
+      </div>
+      <div v-else>
+        <h1 class="title">
+          ログインしてね
+        </h1>
+      </div>
       <h2 class="subtitle">
-        Subtitle
+        にゃーん
       </h2>
       <div v-if="!$store.state.authUser">
         <router-link class="button" to="/login">Go Login Page</router-link>
